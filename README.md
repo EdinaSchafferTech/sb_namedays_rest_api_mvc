@@ -62,12 +62,7 @@ MVC model
 Thymeleaf
    ↓
 Web page
-3. Updating Namedays
-The application will be extended with two APIs for modifying nameday data.
-The MVC application will be able to initiate:
-Changing the date associated with a given first name
-Changing the first name associated with a given date
-The REST application will provide two POST APIs for these modifications.
+
 Technologies
 Java
 Spring Boot
