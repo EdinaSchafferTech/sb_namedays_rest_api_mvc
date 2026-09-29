@@ -19,14 +19,9 @@ public class AppService {
 		this.namedayRepository = namedayRepository;
 	}
 
-	public Iterable<Nameday> findAll() {
-		return namedayRepository.findAll();
-
-	}
-
 	public XmlResponseDTO getXml() {
 
-		Iterable<Nameday> namedays = findAll();
+		Iterable<Nameday> namedays = namedayRepository.findAll();
 
 		String xml = xmlgenerator.generate(namedays);
 

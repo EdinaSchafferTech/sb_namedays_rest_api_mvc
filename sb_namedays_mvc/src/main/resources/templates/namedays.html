@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Namedays</title>
+</head>
+<body>
+
+<h1>Namedays</h1>
+
+<table>
+    
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+        </tr>
+   
+
+    <tbody>
+        <tr th:each="nameday : ${namedays}">
+            
+            <td th:text="${nameday.name}"></td>
+            <td th:text="${nameday.date}"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
